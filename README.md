@@ -1,37 +1,37 @@
 # Token Efficiency
 
-A skill that teaches coding agents to minimize token waste in all tool use, file reading, and data processing operations.
+Uma habilidade que ensina agentes de programação a minimizar o desperdício de tokens em todas as operações de uso de ferramentas, leitura de arquivos e processamento de dados.
 
-Every byte of tool output is money and context window spent. This skill instills the habit of filtering, projecting, and truncating at the source — not dumping raw output and hoping for the best.
+Cada byte de saída de uma ferramenta custa dinheiro e ocupa espaço na janela de contexto. Essa habilidade incentiva o hábito de filtrar, projetar e truncar na origem — em vez de despejar saídas brutas e torcer para o melhor.
 
-> **Sunset notice:** This skill exists because current coding agents haven't yet internalized efficient tool use. As models improve and these practices become default behavior, this skill will be discontinued.
+> **Aviso de desativação:** Esta habilidade existe porque agentes atuais ainda não internalizaram o uso eficiente de ferramentas. À medida que os modelos melhorarem e essas práticas se tornarem padrão, esta habilidade será descontinuada.
 
-## What it covers
+## O que ela aborda
 
-- Structured query tools (`jq`, `yq`, `awk`) over dump-and-read
-- Precision search (`ast-grep`, `rg`) over broad text search
-- Git summary-first workflows (`--stat`, `--name-only`)
-- Output noise suppression (quiet flags, `NO_COLOR`, selective reads)
-- Hash-based change detection over re-reading files
-- Coreutils over Python for simple transforms
+- Ferramentas de consulta estruturada (`jq`, `yq`, `awk`) em vez de despejar tudo e depois ler  
+- Pesquisa precisa (`ast-grep`, `rg`) em vez de buscas de texto amplas  
+- Fluxos de trabalho orientados a resumo no Git (`--stat`, `--name-only`)  
+- Supressão de ruído de saída (flags silenciosas, `NO_COLOR`, leituras seletivas)  
+- Detecção de mudanças baseada em *hash* em vez de reler arquivos  
+- Uso de coreutils em vez de Python para transformações simples  
 
-## Installation
+## Instalação
 
 ### Claude Code
 
-First, add the marketplace:
+Primeiro, adicione o marketplace:
 ```
 /plugin marketplace add undefdev/token-efficiency
 ```
 
-Then install:
+Depois instale:
 ```
 /plugin install token-efficiency@undefdev-token-efficiency
 ```
 
 ### Cursor
 
-Not yet available on the Cursor Marketplace. For now, clone the repo and add the skill content to your project's rules manually.
+Ainda não disponível no Cursor Marketplace. Por enquanto, clone o repositório e adicione o conteúdo da habilidade às regras do seu projeto manualmente.
 
 ### Gemini CLI
 
@@ -41,8 +41,8 @@ gemini extensions install https://github.com/undefdev/token-efficiency
 
 ### Codex
 
-See [.codex/INSTALL.md](.codex/INSTALL.md)
+Consulte [.codex/INSTALL.md](.codex/INSTALL.md)
 
 ### OpenCode
 
-See [.opencode/INSTALL.md](.opencode/INSTALL.md)
+Consulte [.opencode/INSTALL.md](.opencode/INSTALL.md)
